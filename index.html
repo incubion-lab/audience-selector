@@ -120,6 +120,24 @@
         font-size: 15px;
       }
     }
+    
+    .label-en,
+    .label-ja {
+      display: block;
+    }
+
+    .label-en {
+      font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .label-ja {
+      margin-top: 4px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
@@ -134,8 +152,15 @@
         ご関心に応じた説明ページへご案内します。
       </p>
 
-      <a class="btn btn-primary" href="https://example.com/page-a">Looking for Robot Information? / ロボット情報をお探しの方</a>
-      <a class="btn btn-secondary" href="https://incubion.com/robotatta/">In the Robot Business? / ロボット関連事業者の方</a>
+      <a class="btn btn-primary" href="https://example.com/page-a">
+        <span class="label-en">Looking for Robot Information?</span>
+        <span class="label-ja">ロボット情報をお探しの方</span>
+      </a>
+
+      <a class="btn btn-secondary" href="https://example.com/page-b">
+        <span class="label-en">In the Robot Business?</span>
+        <span class="label-ja">ロボット関連事業者の方</span>
+      </a>
 
       <p class="note">
         <a href="#" onclick="history.back(); return false;">Back 戻る</a>
